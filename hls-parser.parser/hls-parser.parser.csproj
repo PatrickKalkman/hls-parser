@@ -5,4 +5,8 @@
     <RootNamespace>hls_parser.parser</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Sprache" Version="2.2.0" />
+  </ItemGroup>
+
 </Project>
