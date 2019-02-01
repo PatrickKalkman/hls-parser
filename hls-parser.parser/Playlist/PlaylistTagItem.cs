@@ -1,10 +1,16 @@
 using System.Collections.Generic;
 using System.Linq;
-   
+
 namespace HlsParser.Parser
 {
   public class PlaylistTagItem : PlaylistItem
   {
+    public PlaylistTagItem(PlaylistTagId id, string value)
+    {
+      Id = id;
+      RawValue = value;
+    }
+
     public PlaylistTagId Id { get; }
     public List<PlaylistTagAttribute> Attributes { get; }
     public string Value
@@ -27,11 +33,6 @@ namespace HlsParser.Parser
       Attributes = attributes;
     }
 
-    public PlaylistTagItem(PlaylistTagId id, string value)
-    {
-      Id = id;
-      RawValue = value;
-    }
 
 
     public bool HasAttributes()

@@ -1,6 +1,6 @@
-using Sprache;
 using System;
 using System.Linq;
+using Sprache;
 
 namespace HlsParser.Parser
 {
